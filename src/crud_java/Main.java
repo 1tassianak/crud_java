@@ -9,9 +9,9 @@ public class Main {
 		PacienteDAO pacienteDao = new PacienteDAO();
 
 		Paciente p = new Paciente();
-		p.setNome("Tassi");
-		p.setCpf("01685946097");
-		p.setDtnasc(new Date(19/07/1988));
+		p.setNome("Nome");
+		p.setCpf("00000000000");
+		p.setDtnasc(new Date(10/07/1900));
 		p.setSexo("f");
 		p.setEndereco("Rua tal");
 		p.setFone("123456789");
@@ -26,9 +26,9 @@ public class Main {
 		Paciente p1 = new Paciente();
 		p1.setIdPaciente(12);
 		p1.setNome("Tassiana");
-		p1.setCpf("01685946097");
-		p1.setDtnasc(new Date(19/07/1988));
-		p1.setSexo("f");
+		p1.setCpf("99999999999");
+		p1.setDtnasc(new Date(15/05/1956));
+		p1.setSexo("m");
 		p1.setEndereco("Rua tal");
 		p1.setFone("123456789");
 		p1.setTiposangue("A-");
@@ -38,7 +38,7 @@ public class Main {
 		p1.setCondicoes("renite alérgica");
 		p1.setIdPaciente(2);
 		
-		//pacienteDao.alterar_dados(p1);
+		pacienteDao.alterar_dados(p1);
 		
 		pacienteDao.deletar_dados(1);
 		

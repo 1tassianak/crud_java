@@ -8,12 +8,6 @@ import java.util.List;
 
 public class PacienteDAO {
 	
-	private Connection conn;
-
-	public PacienteDAO() {
-		this.conn = ConnectionFactory.getConnection();
-	}
-
 	
 	public void cadastrar_dados(Paciente paciente) {
 		String sql = "INSERT INTO paciente (idPaciente, nome, cpf, dtnasc, sexo, endereco, fone, tiposangue, historicofamilia, doencas_antigas, doencas_atuais, condicoes) VALUES (NULL, ?,?,?,?,?,?,?,?,?,?,?)";
